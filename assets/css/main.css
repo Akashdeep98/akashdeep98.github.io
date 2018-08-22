@@ -1,0 +1,60 @@
+body {
+	font-family: sans-serif;
+}
+.box
+{
+	width: 100%;
+	background: #4da6ff;
+	text-decoration-color: white;
+	height: auto;
+}
+
+.margin
+{
+ margin-top: 20vh;
+}
+a:link{
+	color: red;
+}
+a:visited
+{
+	color: green;
+}
+
+#calmboy
+{
+	animation-delay: -2s;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+#skills
+{
+	animation-delay: -2s;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+.text-justify {
+    text-align: justify;
+}
+p {
+    color: white;
+    letter-spacing: 2px;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.hidden{
+     opacity:0;
+}
+.visible{
+     opacity:1;
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+	.margin
+{
+ margin-top: 2vh;
+}
+}
