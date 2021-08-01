@@ -1,206 +1,355 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Portfolio of Akashdeep Arora">
     <meta name="author" content="Akashdeep Arora">
 
-	<title>Akashdeep Arora</title>
+    <title>Akashdeep Arora</title>
 
-	<link rel="icon" href="assets/images/icon.png" type="image/x-icon"/>
-	<!-- Custom styles for this template -->
+    <link rel="icon" href="assets/images/icon.png" type="image/x-icon"/>
+    <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
     <!--CSS file for animations-->
     <link href="assets/css/animate.css" rel="stylesheet">
     <!--Bootstrap css-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- typeit cdn -->
     <script src="assets/js/typeit.min.js"></script>
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
     <!--fontawsome cdn-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 <body style="background-color: #cce6ff" link="white" data-spy="scroll" data-target=".navbar" data-offset="95">
-	<!--navbar begins-->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-  		<a class="navbar-brand" href="#top">Akashdeep Arora</a>
-  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    		<span class="navbar-toggler-icon"></span>
-  		</button>
-  		<div class="collapse navbar-collapse" id="navbarNav">
-    		<ul class="navbar-nav">
-      			<li class="nav-item">
-        			<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="#skills">My Skills</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="#projects">Projects</a>
-      			</li>
-      			<li class="nav-item">
-        			<a class="nav-link" href="#contact">Contact Me</a>
-      			</li>
-    		</ul>
-  		</div>
-	</nav>
-	<!--navbar ends-->
+<!--navbar begins-->
+<div class="root">
+    <div class="spotlight"></div>
+    <div id="intro" class="intro">
+        <span class="name">akashdeep.in</span>
+        <div id="blue_ball" class="blue_ball"></div>
 
-	<br>
-	<div class="container" id="top">
-		<div class="row margin">
-			<div class="col-md-6">
-				<div class="animated bounce" id="calmboy">
-					<center>
-						<img src="assets/images/calm.svg" style="height: 400px; width: 85%;" >
-					</center>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="box">
-					<br>
-					<h1 align="center" style="color:white;font-family: sans-serif; "><span class="greet"></span></h1>
-					<br>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="container" id="about">
-		<div class="margin box"  data-aos="zoom-in-up" data-aos-duration="3000">
-			<div>
-				    <br>
-					<center>
-						<h1 style="color: white; padding-left: 10px;" >About Me</h1>
-						<br>
-						<img src="assets/images/akash.jpg" style=" width: 30%; border-radius: 60%;" >
-					</center>
-					<br>
-					<p class="text-justify content" style="line-height: 30px; letter-spacing: 2px; font-size: 7;">Hey, I am Akashdeep. I am a third-year undergraduate and currently pursuing a major in Computer Science and Engineering from ABES Engineering College, Ghaziabad, India. I have a problem-solving mindset, and I am interested in Algorithms. I am pretty handy with tools such as HTML, CSS, JavaScript, jQuery, Bootstrap and Reactjs. I am a part of my college's premier coding club “Technovation Club”, which has always been an awesome learning experience !! Passions of mine include Writing, Travelling, Chess, learning new things of course, if I get time apart from Programming and Academics!
+    </div>
+</div>
+<div id="wrap" class="wrap">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#top"><span class="name1">Akashdeep.in</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">My Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#open-source">Open Source Contributions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--navbar ends-->
 
+    <div class="container greet_container" id="top">
+        <div class="row margin">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+                <img src="assets/images/Akashdeep.png" alt="My Picture"
+                     style=" height: 290px; border-radius: 70%; margin-bottom: 40px ">
+            </div>
+            <div class="col-md-6">
+                <div class="blue_ball1"></div>
+                <div class="greet box">
+                    <br>
+                    <h1 align="center" style="color:white;font-family: sans-serif; "><span class="greet"></span></h1>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">About Me</h1>
+                    <br>
+                    <p class="text-justify content" style="line-height: 30px; letter-spacing: 2px;">Hey, I am Akashdeep.
+                        I am a frontend web developer currently working for <a target="_blank" rel="noopener noreferrer"
+                                                                               href="https://devslane.com/">Devslane(ESCECION
+                            TECHNOLOGIES PVT. LTD.)</a>,
+                        India. I have a problem-solving mindset,
+                        and I am interested in Algorithms. I have good hands on experience with React.js, JavaScript and
+                        TypeScript and I am handy with frontend tools and technologies like HTML, CSS, SCSS, Bootstrap,
+                        Ant Design and VCS( Version Control
+                        System) like Git. My current role requires writing reusable and clean code to develop and design
+                        a good user interface and experience. Responsibilities range from complete ownership of
+                        features, design, implementation and operations of these features and components.
+                        Passions of mine include Writing,
+                        working out, playing Chess and learning new things.
                     </p>
-					<br>
-			</div>
-		</div>
-	</div>
-	<br>
-	<div class="container"  id="skills">
-		<div class="row margin">
-			<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
-					<div class="box">
-						<br>
-					 	<h1 style="color: white; padding-left: 10px;" >My Skills</h1>
-						<p class="text-justify content">I mostly write scripts that could contribute in solving real-world problems, but like many developers, I sometimes write code just to learn from it and teach myself new technologies. I love Web Application development and have done projects making use of HTML, CSS, JavaScript, jQuery and awesome frameworks such as Bootstrap and Reactjs, and I am currently trying my hands on Nodejs for back-end development.
-                    	</p>
-						<br>
-					</div>
-				</div>
-				<br>
-				<br>
-				<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
-					<div >
-						<center>
-							<img src="assets/images/skills.svg" style="height: 300px; width: 85%;" >
-						</center>
-					</div>
-				</div>
-		</div>
-	</div>
-	<br>
-	<div class="container" id="projects">
-		<div class="row margin" >
-			<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
-				<div>
-					<center>
-							<img src="assets/images/projects.svg" style="height: 300px; width: 85%;" >
-					</center>
-				</div>
-			</div>
-			<div class="col-md-6"  data-aos="zoom-in-up" data-aos-duration="2000">
-				<div class="box ">
-					<br>
-					 <h1 style="color: white; padding-left: 10px;" >My Projects</h1>
-					<p class="text-justify content"> 
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="assets/images/coderboy.png" style="width: 85%;"
+                         alt="Image of a boy coding">
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="skills">
+        <div class="row margin">
+            <br>
+            <br>
+            <div class="col-md-6 mb-3" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="d-flex align-items-center justify-content-center">
+                    <img src="assets/images/skills.svg" style="width: 85%;" alt="skills animated image">
+                </div>
+            </div>
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">My Skills</h1>
+                    <p class="text-justify content">I mostly write scripts that could contribute in solving real-world
+                        problems, but like many developers, I sometimes write code just to learn from it and teach
+                        myself new technologies.
                     </p>
-					<br>
-				</div>
-				<br>
-				<div class="box ">
-					<br>
-					 <h1 style="color: white; padding-left: 10px;" >Technovation</h1>
-					<p class="text-justify content">This is a website for an elite club, Technovation of Computer Science and Engineering Department in our college.<br><br>
-						<b>Link:</b>&nbsp;&nbsp;<a href="http://technovation.netlify.com/">Technovation</a>
+                    <p>
+                        I have good hands on experience with <b>React.js, JavaScript and TypeScript</b>. I am handy with
+                        frontend
+                        technologies like <b>HTML, CSS, SCSS and VCS( Version Control System)</b>
                     </p>
-					<br>
-				</div>
-			</div>
-		</div>
-	</div>
-		<br>
-	<div class="container" id="contact">
-		<div class="box margin" data-aos="flip-up" data-aos-duration="3000">
-			<center>
-				<br>
-				<h1 style="color: white; padding-bottom: 20px;">Contact Me</h1>
-			</center>
-		</div>
-		<br>
-		<div class="row">
-			<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
-					<div class="box">
-						<br>
-						<p class="text-justify content">Either way, if you want to say just hello or have an idea and want to collaborate and build some cool stuff, feel free to ping me up or let's grab a cup of coffee at some cool place.
-						<br>
-						<br>
-					</div>
-				</div>
-				<br>
-				<div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
-					<div>
-						<center>
-							<img src="assets/images/coffe.png" style="height: 150px; width: 85%;" >
-						</center>
-					</div>
-				</div>
-		</div>
-	</div>
-	<br>
-	<footer>
-		<center>
-			<a href="https://www.linkedin.com/in/akashdeep98"><i class="fa fa-linkedin-square" style="font-size:48px;color: #4da6ff;margin-right: 10px;"></i></a>
-			<a href="https://mtouch.facebook.com/akashdeep.arora.96?tsid=0.8364640379539423&source=result"><i class="fa fa-facebook-square" style="font-size:48px;color: #4da6ff;margin-right: 10px;"></i></a>
-			<a href="https://github.com/akashdeep98"><i class="	fa fa-github" style="font-size:48px;color: #4da6ff"></i></a>
-		</center>
-	</footer>
-	<br>
-	<script>
- 		 AOS.init();
-	</script>
-	<script type="text/javascript">
-        new TypeIt('.greet', {
+                    <p>
+                        I have a adaptive nature and have an experricence of working in different environments, I have
+                        keen interest in learning new things in field of development and have worked with various
+                        frameworks like <b>ANT Design, Bootstrap, Material Design etc.</b>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="projects">
+        <div class="row margin">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">My Projects</h1>
+                    <p class="text-justify content">
+                    </p>
+                    <br>
+                </div>
+                <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="assets/images/projects.svg" style="width: 85%;"
+                             alt="animated image for projects">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="d-flex col-md-6 mb-3 mb-md-0" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">CodeShelf (IN PROGRESS)</h1>
+                    <p class="text-justify content">CodeShelf is a social development environment for front-end
+                        designers and
+                        developers. Build and deploy a website, show off and share your work with friends and
+                        colleagues.<br><br>
+                        <b>Demo Link:</b>&nbsp;&nbsp;<a href="https://codeshelf-1.web.app" target="_blank"
+                                                        rel="noopener norefferer">CodeShelf</a>
+                        (React.js)<br/>
+                        <b>Repository Link:</b>&nbsp;&nbsp;<a href="https://github.com/Akashdeep98/CodePen-Clone"
+                                                              target="_blank" rel="noopener norefferer">Repository
+                            (under construction)</a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="d-flex col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">Technovation</h1>
+                    <p class="text-justify content">This is a website for an elite club, Technovation of Computer
+                        Science and Engineering Department in our college.<br><br>
+                        <b>Link:</b>&nbsp;&nbsp;<a href="https://akashdeep98.github.io/Technovation/" target="_blank">Technovation</a>
+                        (HTML CSS & JS based)<br/>
+                        <b>Repository Link:</b>&nbsp;&nbsp;<a href="https://github.com/Akashdeep98/Technovation"
+                                                              target="_blank" rel="noopener norefferer">Repository
+                            (under construction)</a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="d-flex col-md-6 mb-3 mb-md-0" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">Chat App</h1>
+                    <p class="text-justify content">This is a realtime chat app based on socket.io and node.js. This is
+                        project I built while playing around with node.js<br><br>
+                        <b>Repository Link:</b>&nbsp;&nbsp;<a href="https://github.com/Akashdeep98/ChatApp"
+                                                              target="_blank" rel="noopener norefferer">Repository
+                        </a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="cd-flex col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">YoutubeMate</h1>
+                    <p class="text-justify content">YoutubeMate is a python based web crawler, which downloads N number
+                        of youtube
+                        videos based on topic suggested.<br><br>
+                        <b>Repository Link:</b>&nbsp;&nbsp;<a href="https://github.com/Akashdeep98/Web-Crawler"
+                                                              target="_blank" rel="noopener norefferer">Repository</a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <div class="container" id="open-source">
+        <div class="box margin" data-aos="flip-up" data-aos-duration="3000">
+            <br>
+            <h1 style="color: white; padding-bottom: 20px;">Open Source Contributions</h1>
+        </div>
+        <br>
+        <div class="row mt-3">
+            <div class="d-flex col-md-6 mb-3 mb-md-0" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;word-break: break-all">@types/codemirror</h1>
+                    <p class="text-justify content">Fixed incorrect type definitions added new ones for some
+                        specs.<br><br>
+                        <b>Package Link:</b>&nbsp;&nbsp;<a href="https://www.npmjs.com/package/@types/codemirror"
+                                                           target="_blank" rel="noopener norefferer">Package
+                        </a><br>
+                        <b>Commit Link:</b>&nbsp;&nbsp;<a
+                                href="https://github.com/DefinitelyTyped/DefinitelyTyped/commit/67d15455701e12d8383cdbbd77cbd8c61d45f767"
+                                target="_blank" rel="noopener norefferer">Commit
+                        </a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+            <div class="d-flex col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box ">
+                    <br>
+                    <h1 style="color: white; padding-left: 10px;">rc-picker</h1>
+                    <p class="text-justify content">Bug fix added for a reported issue on ANT Design. Ant design uses
+                        rc-picker for Ant Date Picker.
+                        <br><br>
+                        <b>Package Link:</b>&nbsp;&nbsp;<a href="https://www.npmjs.com/package/rc-picker"
+                                                           target="_blank" rel="noopener norefferer">Package</a>
+                        <br>
+                        <b>Commit Link:</b>&nbsp;&nbsp;<a
+                                href="https://github.com/react-component/picker/commit/9ba45e4461506c8fd8fafdf85955bcd7ae9463eb"
+                                target="_blank" rel="noopener norefferer">Commit
+                        </a>
+                    </p>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="contact">
+        <div class="box margin" data-aos="flip-up" data-aos-duration="3000">
+            <br>
+            <h1 style="color: white; padding-bottom: 20px;">Contact Me</h1>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div class="box">
+                    <br>
+                    <p class="text-justify content">Either way, if you want to say just hello or have an idea and want
+                        to collaborate and build some cool stuff, feel free to ping me up or let's grab a cup of coffee
+                        at some cool place.
+                        <br>
+                        <br>
+                </div>
+            </div>
+            <br>
+            <div class="col-md-6" data-aos="zoom-in-up" data-aos-duration="2000">
+                <div>
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="assets/images/coffe.png" style="width: 85%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <div class="d-flex align-items-center justify-content-center">
+            <a href="https://www.linkedin.com/in/akashdeep18" target="_blank" rel="noopener norefferer"><i class="fa fa-linkedin-square"
+                                                                 style="font-size:48px;color: #4da6ff;margin-right: 10px;"></i></a>
+            <a href="https://mtouch.facebook.com/akashdeep.arora.96?tsid=0.8364640379539423&source=result" target="_blank" rel="noopener norefferer"><i
+                    class="fa fa-facebook-square" style="font-size:48px;color: #4da6ff;margin-right: 10px;"></i></a>
+            <a href="https://github.com/akashdeep98" target="_blank" rel="noopener norefferer"><i class="	fa fa-github"
+                                                        style="font-size:48px;color: #4da6ff"></i></a>
+        </div>
+    </footer>
+    <br>
+</div>
+<script type="text/javascript">
+    new TypeIt('.greet', {
         autoStart: false
-             })
+    }).pause(8000)
         .type('Hello, Folks!')
         .pause(1000)
         .break()
         .break()
-        .type('Good To See You!!')
+        .type('I am').pause(500)
+        .delete(4).pause(500)
+        .type('Good To See You!! &#128512;')
         .pause(1000)
-        .break()      
-        .break()  
-        .type('I am Akashdeep');
-    </script>
+        .break()
+        .break()
+        .type('I am a Developer.. &#129300;').pause(500)
+        .delete(14).pause(200).type('Coder.. &#129300;').pause(500)
+        .delete(12).pause(200).type('AKASHDEEP. &#128075;');
+</script>
 
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 </html>

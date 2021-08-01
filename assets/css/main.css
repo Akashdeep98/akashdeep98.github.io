@@ -1,3 +1,160 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.root{
+	background-image: linear-gradient(0deg, #182848, #2980b9);
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	z-index: 6544265;
+}
+
+#wrap{
+	display: none;
+}
+
+.intro{
+	animation-name: showit;
+	animation-duration: 1.5s;
+}
+
+.name1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 1em;
+}
+
+.name{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 3em;
+	color: white;
+	position: absolute;
+	z-index: 1000;
+}
+
+.greet_container{
+	padding-top: 10vh;
+	height: 100vh;
+}
+.blue_ball{
+	background-color: #4da6ff;
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	position: relative;
+	margin-left:12em;
+	animation-name: bounce_ball;
+	animation-duration: 2s;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	/*animation-timing-function:  cubic-bezier(1,0,.89,1);*/
+	/*animation-iteration-count: 2;*/
+}
+
+.blue_ball1{
+	background-color: #4da6ff;
+	border-radius: 100%;
+	width: 80px;
+	height: 80px;
+	animation-duration: 1s;
+	/*animation-delay: 2s;*/
+	margin-left:12em;
+	animation-fill-mode: forwards;
+}
+.greet{
+	display: none;
+}
+
+@-webkit-keyframes bounceball {
+	0%{
+		transform: translateY(-20vh);
+	}
+
+	50%{
+		transform: translateY(25vh);
+	}
+	75%{
+		transform: scale(2);
+	}
+}
+
+@keyframes showit {
+	0%{
+		opacity: 0;
+	}
+	50%{
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+
+@keyframes bounce_ball {
+	0% {
+		transform: translate(-14em,-50vh);
+		animation-timing-function: ease-out;
+	}
+
+	13% {
+		transform: translate(-12em,-20vh) ;
+		animation-timing-function: ease-out;
+	}
+
+	28% {
+		transform: translate(-10em,0vh) scale(1.1,0.9);
+		animation-timing-function: ease-out;
+	}
+
+	35%{
+		transform: translate(-9em,-13vh) ;
+	}
+
+	43% {
+		transform: translate(-7em,-15vh);
+		animation-timing-function: ease-out;
+	}
+
+	58% {
+		transform: translate(-5em,-13vh) ;
+		animation-timing-function: ease-out;
+	}
+
+	73% {
+		transform: translate(-3em,0vh) scale(1.1,0.9);
+		animation-timing-function: ease-out;
+	}
+
+	88% {
+		transform: translate(-1em,-8vh);
+		animation-timing-function: ease-out;
+	}
+
+	93% {
+		transform: translate(0em,-6vh);
+		animation-timing-function: ease-out;
+	}
+
+	100% {
+		transform: translate(0px,0px) scale(1.1,0.9);
+		animation-timing-function: ease-in;
+	}
+}
+@keyframes expand {
+	0%{transform: scale(1)}
+	40%{transform: scale(40);}
+	80%{transform: scale(1)}
+	100%{transform: translateY(60vh)}
+}
+
 body {
 	font-family: sans-serif;
 }
@@ -7,6 +164,17 @@ body {
 	background: #4da6ff;
 	text-decoration-color: white;
 	height: auto;
+	padding: 5px;
+	flex: 1 1 auto;
+}
+
+.box1
+{
+	width: 100%;
+	background: #4da6ff;
+	text-decoration-color: white;
+	height: auto;
+	border-radius: 50px;
 }
 
 .margin
@@ -21,10 +189,31 @@ a:visited
 	color: green;
 }
 
+@keyframes calmboy {
+	0%{
+		transform: translateY(-5vh);
+	}
+	50%{
+		transform: translateY(0vh);
+	}
+	100%{
+		transform: translateY(-5vh);
+	}
+}
+
 #calmboy
 {
-	animation-delay: -2s;
-	animation-duration: 8s;
+	animation-name: calmboy;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+}
+#calmboy_md
+{
+	animation-name: calmboy;
+	animation-fill-mode: forwards;
+	animation-duration: 5s;
 	animation-iteration-count: infinite;
 	animation-timing-function: ease-out;
 }
@@ -52,9 +241,15 @@ p {
      opacity:1;
 }
 
-@media (min-width: 300px) and (max-width: 450px) {
-	.margin
-{
- margin-top: 2vh;
-}
+
+
+@media (min-width: 300px) and (max-width: 700px) {
+	.greet_container{
+		height: 100%;
+		min-height: 100vh!important;
+	}
+
+	.margin {
+		margin-top: 2vh;
+	}
 }
